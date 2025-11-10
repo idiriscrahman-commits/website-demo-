@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha University | Design in home page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Alpha2</div>
+            <div class="mobile-menu">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Design that speaks clearly.</h1>
+            <p>A simple, clean homepage layout with a hero image, cards, content sections, gallery, CTA and footer.</p>
+            <a href="#contact" class="btn">Talk to us</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                
+                <h2>Key Features</h2>
+                <p>Our approach combines modern design principles with user-centered thinking</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Fast performance</h3>
+                    <p>Lightweight structure and minimal CSS for a snappy load and feel.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Clean layout</h3>
+                    <p>Clear sections and consistent spacing make content easier to scan.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Responsive</h3>
+                    <p>Works across phones, tablets and desktops with an easy grid system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer comprehensive solutions from design to deployment</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Design & Strategy</h3>
+                    <p>We blend visual design with user-centered thinking to craft interfaces that communicate effectively and feel delightful to use.</p>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Talk to us</a>
+                </div>
+                <div class="service-card">
+                    <h3>Build & Deploy</h3>
+                    <p>From prototypes to production — we deliver reliable, maintainable code and a deployment pipeline for continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Explore our portfolio of successful projects</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 1">
+                </div>
+                <iv class="gallery-item">
+                    <img src="dhttps://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to get started?</h2>
+            <p>Contact us today to discuss your project and how we can help bring your vision to life.</p>
+            <a href="#contact" class="btn">Get in touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Alpha</h3>
+                    <p>Design that speaks clearly. Creating beautiful, functional websites that deliver results.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                                    
+                
+                </div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@alphauniv.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Design Street, Creative City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Alpha &Odblac;; 2025 | Developed: IDIRIS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.querySelector('nav ul').classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
